@@ -2,9 +2,9 @@
   "name": "lab-intro-to-express-response",
   "version": "1.0.0",
   "description": "Introduction to Express",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "nodemon server.js",
     "test": "jest"
   },
   "dependencies": {
