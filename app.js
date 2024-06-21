@@ -65,7 +65,7 @@ const magic8Responses = [
   ]
 
   app.get('/magic8', (request, response) => {
-    response.send(`<h1>${magic8Responses}</h1>`);
+    response.send(`<h1>${"It is certain"}</h1>`);
   })
 
 
