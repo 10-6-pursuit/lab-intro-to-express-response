@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 3003;
+
 const magic8Responses = [
   "It is certain",
   "It is decidedly so",
@@ -26,9 +26,9 @@ function randomMagicRes(array) {
   const randomIdx = Math.floor(Math.random() * array.length);
   return array[randomIdx];
 }
-app.get("/", (request, response) => {
-  response.send("Hello world!");
-});
+app.get('/', (request, response) => {
+  response.status(418).send('Hello, world!')
+})
 app.get("/emeril", (request, response) => {
   response.send("Bam!");
   response.send("Boom!");
@@ -63,6 +63,5 @@ app.get("/jack-dawson", (req, res) => {
 app.get("/magic8", (req, res) => {
   res.send(`<h1>${randomMagicRes(magic8Responses)}</h1>`);
 });
-app.listen(port, () => {
-  console.log(`running on port ${port}`);
-});
+
+module.exports = app
