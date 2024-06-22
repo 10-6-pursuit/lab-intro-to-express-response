@@ -1,0 +1,28 @@
+{
+  "name": "lab-intro-to-express-response",
+  "version": "1.0.0",
+  "description": "Create a server of famous catch phrases and a Magic 8 Ball.",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AntCannon/lab-intro-to-express-response.git"
+  },
+  "keywords": [
+    "express"
+  ],
+  "author": "Anthony Cannonier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AntCannon/lab-intro-to-express-response/issues"
+  },
+  "homepage": "https://github.com/AntCannon/lab-intro-to-express-response#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.3"
+  }
+}
