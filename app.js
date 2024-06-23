@@ -65,9 +65,10 @@ const magic8Responses = [
   ]
 
   app.get('/magic8', (request, response) => {
-    response.send(`<h1>${"It is certain"}</h1>`);
-  })
-
+    const randomIndex = Math.floor(Math.random() * magic8Responses.length);
+    const randomResponse = magic8Responses[randomIndex];
+    response.send(randomResponse);
+  });
 
 
 app.listen(PORT, () => {
