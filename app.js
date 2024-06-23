@@ -1,15 +1,15 @@
 const express = require('express');
 
 const app = express();
-const PORT = 3003;
+//const PORT = 3003;
 
 app.get("/", (req, res) => {
     res.send('hello world');
 });
 
-app.listen(PORT, () => {
-    console.log(`listening on port ${PORT}`);
-});
+// app.listen(PORT, () => {
+//     console.log(`listening on port ${PORT}`);
+// });
 
 app.get("/terminator", (req, res) => {
     res.send("I'll be back - Hasta la vista, baby");
@@ -74,4 +74,6 @@ const magic8Responses = [
     res.send(`<h1>${magic8Responses[Math.floor(Math.random() * magic8Responses.length)]}</h1>`);
 
 });
+
+module.exports = app;
 
