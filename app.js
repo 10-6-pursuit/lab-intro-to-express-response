@@ -1,7 +1,6 @@
 const express = require("express");
 
 const app = express();
-const PORT = 3333
 
 //Magic 8 Array
 
@@ -29,7 +28,8 @@ const magic8Responses = [
 
 //Main Route
 app.get("/", (req, res) => {
-  res.send("Intro to express response")
+  // res.send("Intro to express response")
+  res.status(200).send("Hello, World!")
 })
 
 //Routes based on characters and their famous catch phrases
@@ -76,7 +76,5 @@ app.get("/magic8", (req, res) => {
   res.send(`<h1>${randomAnswer}</h1>`);
 })
 
-//Listen to the server
-app.listen(PORT, () => {
-  console.log(`Listening to PORT: ${PORT}`)
-})
+//export app file
+module.exports = app
